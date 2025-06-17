@@ -51,4 +51,4 @@ The layout and code comes directly from the APCminiMKII module from Lenschcore.
 - You need to prokrastinate and Question the use of all your doing? Do something nice with no practicall use for shure and imporve the Logoanimation!
 
 ## Original Midi Layout and Module Naming
-![hell](https://raw.githubusercontent.com/Polofiziert/Akai-APC-MINI-Chataigne-Module/refs/heads/main/APCmini_Chataigne_Module.jpg)
+![hell](https://github.com/Polofiziert/AKAI-APCmini-ChataigneModule/blob/main/APCmini_Chataigne_Module.png)
