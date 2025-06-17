@@ -383,6 +383,7 @@ function moduleParameterChanged(param)
 		if(param.getParent().name == "mainButtons")
 		{
 			var id = [(parseInt(param.name.charAt(6))-1), (parseInt(param.name.charAt(7))-1)];
+			script.log(color);
 			sendButtonColor(id, color);
 		}
 		else if(param.getParent().name == "sideButtons")
@@ -532,6 +533,7 @@ function setColorEnum(id, color)
 	var colorObj = colorParameterObj[id[0]][id[1]];
 	if (!!colorObj)
 	{
+		script.log("color Balck");
 		colorObj.set(color);
 	}
 }
@@ -561,7 +563,6 @@ function setColorByPosition(x, y, color)
 	var colorObj = colorParameterObj[x-1][y-1];
 	if (!!colorObj)
 	{
-		// script.log("setColorByPosition Value: " + color);
 		colorObj.set(color);
 	}
 }

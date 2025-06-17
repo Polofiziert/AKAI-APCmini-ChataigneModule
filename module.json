@@ -389,7 +389,7 @@
 
 	"commands":
 	{
-		"Set Color by Id":
+		"Set Main Button by Id":
 		{
 			"menu":"Color",
 			"callback":"setColorEnum",
@@ -481,19 +481,19 @@
 					"type":"Enum",
 					"options":
 					{
-						"Black":0,
-						"Green":1,
-						"Green_Blink":2,
-						"Red":3,
-						"Red_Blink":4,
-						"Yellow":5,
-						"Yellow_Blink":6
+						"Black":"Black",
+						"Green":"Green",
+						"Green_Blink":"Green_Blink",
+						"Red":"Red",
+						"Red_Blink":"Red_Blink",
+						"Yellow":"Yellow",
+						"Yellow_Blink":"Yellow_Blink"
 					}
 				}
 			}
 		},
 
-		"Set Color by Note":
+		"Set Main Button by Note":
 		{
 			"menu":"Color",
 			"callback":"setColorByNote",
@@ -512,19 +512,19 @@
 					"type":"Enum",
 					"options":
 					{
-						"Black":0,
-						"Green":1,
-						"Green_Blink":2,
-						"Red":3,
-						"Red_Blink":4,
-						"Yellow":5,
-						"Yellow_Blink":6
+						"Black":"Black",
+						"Green":"Green",
+						"Green_Blink":"Green_Blink",
+						"Red":"Red",
+						"Red_Blink":"Red_Blink",
+						"Yellow":"Yellow",
+						"Yellow_Blink":"Yellow_Blink"
 					}
 				}
 			}
 		},
 		
-		"Set Color by Index":
+		"Set Main Button by Index":
 		{
 			"menu":"Color",
 			"callback":"setColorByIndex",
@@ -543,19 +543,19 @@
 					"type":"Enum",
 					"options":
 					{
-						"Black":0,
-						"Green":1,
-						"Green_Blink":2,
-						"Red":3,
-						"Red_Blink":4,
-						"Yellow":5,
-						"Yellow_Blink":6
+						"Black":"Black",
+						"Green":"Green",
+						"Green_Blink":"Green_Blink",
+						"Red":"Red",
+						"Red_Blink":"Red_Blink",
+						"Yellow":"Yellow",
+						"Yellow_Blink":"Yellow_Blink"
 					}
 				}
 			}
 		},
 
-		"Set Color by Position":
+		"Set Main Button by Position":
 		{
 			"menu":"Color",
 			"callback":"setColorByPosition",
@@ -581,13 +581,13 @@
 					"type":"Enum",
 					"options":
 					{
-						"Black":0,
-						"Green":1,
-						"Green_Blink":2,
-						"Red":3,
-						"Red_Blink":4,
-						"Yellow":5,
-						"Yellow_Blink":6
+						"Black":"Black",
+						"Green":"Green",
+						"Green_Blink":"Green_Blink",
+						"Red":"Red",
+						"Red_Blink":"Red_Blink",
+						"Yellow":"Yellow",
+						"Yellow_Blink":"Yellow_Blink"
 					}
 				}
 			}
@@ -760,7 +760,7 @@
 
 		"Set Side/Bottom LED by Index":
 		{
-			"menu":"Side/Bottom LED",
+			"menu":"Color",
 			"callback":"setButtonLed",
 			"description":"Set the LED state of a side or bottom button by its index.",
 			"parameters":
@@ -783,16 +783,22 @@
 					"max":8
 				},
 
-				"LED":
+				"Color":
 				{
-					"type":"Boolean"
+					"type":"Enum",
+					"options":
+					{
+						"Off":"Off",
+						"On":"On",
+						"Blink":"Blink"
+					}
 				}
 			}
 		},
 
 		"Set Side/Bottom LED by Note":
 		{
-			"menu":"Side/Bottom LED",
+			"menu":"Color",
 			"callback":"setButtonLedByNote",
 			"description":"Set the LED state of a side or bottom button by its MIDI note number.",
 			"parameters":
@@ -804,9 +810,15 @@
 					"max":89
 				},
 
-				"LED":
+				"Color":
 				{
-					"type":"Boolean"
+					"type":"Enum",
+					"options":
+					{
+						"Off":"Off",
+						"On":"On",
+						"Blink":"Blink"
+					}
 				}
 			}
 		},
