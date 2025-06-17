@@ -2,6 +2,8 @@
 Module to use all the 64 Pads, 17 Buttons and 9 Faders of the AKAI APCmini MIDI Controller.
 The layout and code comes directly from the APCminiMKII module from Lenschcore.
 
+https://github.com/lenschcode/APC-Mini-mkII-Chataigne-Module
+https://github.com/Edrig/Akai-APC-MINI-Chataigne-Module
 
 ## Values
 **Main Buttons**
